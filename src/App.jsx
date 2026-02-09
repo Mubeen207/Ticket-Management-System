@@ -1,5 +1,6 @@
 import "./App.css";
 import Cities from "./components/Cities";
+import FlightTicketForm from "./components/FlightTicketForm";
 
 function App() {
   // const getData = async () => {
@@ -9,9 +10,12 @@ function App() {
 
   // getData();
 
-  return (<>
-  <Cities />
-  </>);
+  return (
+    <>
+      <Cities />
+      <FlightTicketForm />
+    </>
+  );
 }
 
 export default App;

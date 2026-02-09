@@ -6,6 +6,7 @@ import {
   deleteDoc,
   updateDoc,
   doc,
+  setDoc,
 } from "firebase/firestore/lite";
 import { db } from "./FireBase";
 
@@ -27,14 +28,14 @@ const Cities = () => {
 
   const addCity = async () => {
     if (isEdit) {
-        await updateDoc(doc(db, "cities", id), {
+      await updateDoc(doc(db, "cities", id), {
         name: cityName,
         country: country,
       });
       fetchCities();
-          setIsEdit(null);
+      setIsEdit(null);
     } else {
-      await addDoc(collection(db, "cities"), {
+      await setDoc(doc(db, "cities", "karachi-001"), {
         name: cityName,
         country: country,
       });
