@@ -44,7 +44,7 @@ const Cities = () => {
       setCountry("");
     }
   };
-
+// city update hoga
   const updateCity = async (city) => {
     setCityName(city.name);
     setCountry(city.country);
