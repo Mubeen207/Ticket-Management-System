@@ -5,7 +5,7 @@ import ShowPost from "./ShowPost";
 export default function Home() {
   return (
     <>
-      {/* <div>Home</div> */}
+      {/* <div>Home</div> Iam facing issue*/}
       <CreatePost />
       <ShowPost />
     </>
